@@ -1,0 +1,16 @@
+{
+  "_note": ["示範 plan：at_s 用片內時間（0 = 人聲第一個字）。sfx_id 要對應你 catalog.json 入面嘅 id。"],
+  "catalog": "public/sfx/catalog.json",
+  "offset_s": 0,
+  "base_gain_db": -12.0,
+  "render": {
+    "preview": "out/my_reel.mp4",
+    "out": "out/my_reel_sfx.mp4",
+    "duck": true
+  },
+  "events": [
+    { "at_s": 1.2, "sfx_id": "pop-short", "gain_db": 2, "cue": "標題卡彈入" },
+    { "at_s": 6.5, "sfx_id": "ding-soft", "gain_db": 2, "cue": "關鍵詞落點" },
+    { "at_s": 14.0, "sfx_id": "whoosh-short", "gain_db": -2, "cue": "轉場" }
+  ]
+}
